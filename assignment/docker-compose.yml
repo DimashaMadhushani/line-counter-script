@@ -1,0 +1,6 @@
+services:
+  line-counter:
+    build: .
+    volumes:
+      - ./input:/app/input  # Maps the local "input" folder to "/app/input" inside the container
+    command: input/file1.txt input/file2.txt  # Modify this based on available files
